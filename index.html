@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Citas Médicas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Sección Hero con Parallax -->
+    <header class="main-header parallax">
+        <nav>
+            <h1>App de Citas Médicas</h1>
+            <ul>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#doctores">Doctores</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <section class="intro">
+            <h2 class="fade-in">Facilitamos la gestión de citas médicas</h2>
+            <p class="fade-in">Reserva citas, selecciona doctores y gestiona tu historial de manera eficiente.</p>
+            <a href="#contacto" class="cta-button pulse">Contáctanos</a>
+        </section>
+    </header>
+
+    <!-- Sección Informativa -->
+    <section id="informacion" class="info-section">
+        <h2>Sobre la Aplicación</h2>
+        <p>Nuestra app permite a los pacientes gestionar citas médicas de forma sencilla, recomendando especialistas
+            según sus síntomas. Los doctores podrán gestionar sus horarios y citas, ofreciendo una mejor experiencia
+            para todos.</p>
+        <ul>
+            <li><strong>Para pacientes:</strong> Selección de doctor, horarios y laboratorio.</li>
+            <li><strong>Para doctores:</strong> Gestión de citas y revisión de historial de pacientes.</li>
+        </ul>
+    </section>
+
+    <!-- Sección Especialidades -->
+    <section id="especialidades" class="specialties-section">
+        <h2>Especialidades Disponibles</h2>
+        <div class="specialty">
+            <h3>Cardiología</h3>
+            <p>Especialistas en enfermedades del corazón y el sistema circulatorio.</p>
+        </div>
+        <div class="specialty">
+            <h3>Dermatología</h3>
+            <p>Cuidado de la piel, cabello y uñas.</p>
+        </div>
+        <div class="specialty">
+            <h3>Pediatría</h3>
+            <p>Atención médica para niños y adolescentes.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Doctores -->
+    <section id="doctores" class="doctors-section">
+        <h2>Conoce a nuestros Doctores</h2>
+        <div class="doctor-profile">
+            <img src="doctor1.jpg" alt="Doctor 1">
+            <h3>Dr. Juan Pérez</h3>
+            <p>Cardiólogo con más de 10 años de experiencia.</p>
+        </div>
+        <div class="doctor-profile">
+            <img src="doctor2.jpg" alt="Doctor 2">
+            <h3>Dra. María García</h3>
+            <p>Dermatóloga especializada en enfermedades de la piel.</p>
+        </div>
+        <div class="doctor-profile">
+            <img src="doctor3.jpg" alt="Doctor 3">
+            <h3>Dr. Luis Ramírez</h3>
+            <p>Pediatra con enfoque en atención infantil.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <footer id="contacto" class="contact-section">
+        <h2>Contáctanos</h2>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit" class="send-button">Enviar</button>
+        </form>
+        <p>&copy; 2024 App de Citas Médicas</p>
+    </footer>
+</body>
+
+</html>
