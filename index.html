@@ -1,100 +1,666 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App de Citas Médicas</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>App de Citas Médicas - Información</title>
+    <meta name="title" content="App de Citas Médicas">
+    <meta name="description"
+        content="Página informativa sobre la aplicación de citas médicas desarrollada para facilitar la gestión de citas para pacientes y doctores.">
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+    <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+    <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
 </head>
 
-<body>
-    <!-- Sección Hero con Parallax -->
-    <header class="main-header parallax">
-        <nav>
-            <h1>App de Citas Médicas</h1>
-            <ul>
-                <li><a href="#informacion">Información</a></li>
-                <li><a href="#especialidades">Especialidades</a></li>
-                <li><a href="#doctores">Doctores</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <section class="intro">
-            <h2 class="fade-in">Facilitamos la gestión de citas médicas</h2>
-            <p class="fade-in">Reserva citas, selecciona doctores y gestiona tu historial de manera eficiente.</p>
-            <a href="#contacto" class="cta-button pulse">Contáctanos</a>
-        </section>
+<body id="top">
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="119" height="37" alt="App de Citas Médicas logo">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.svg" width="119" height="37" alt="App de Citas Médicas logo">
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="#home" class="navbar-link hover-1" data-nav-toggler>Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#services" class="navbar-link hover-1" data-nav-toggler>Especialidades</a>
+                    </li>
+
+                    <li>
+                        <a href="#how-to" class="navbar-link hover-1" data-nav-toggler>Guía de Uso</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="navbar-link hover-1" data-nav-toggler>Contacto</a>
+                    </li>
+
+                    <li>
+                        <a href="#faq" class="navbar-link hover-1" data-nav-toggler>FAQ</a>
+                    </li>
+
+                </ul>
+
+                <div class="navbar-bottom">
+
+                    <div class="profile-card">
+                        <img src="./assets/images/author-1.png" width="48" height="48" alt="Usuario"
+                            class="profile-banner">
+
+                        <div>
+                            <p class="card-title">¡Bienvenido!</p>
+
+                            <p class="card-subtitle">
+                                Descubre cómo mejorar tu experiencia médica con nuestra app.
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul class="link-list">
+
+                        <li>
+                            <a href="#" class="navbar-bottom-link hover-1">Perfil</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-bottom-link hover-1">Citas Guardadas</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-bottom-link hover-1">Mis Citas</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-bottom-link hover-1">Configuración</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-bottom-link hover-1">Cerrar Sesión</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <p class="copyright-text">
+                    Copyright 2024 © App de Citas Médicas.
+                </p>
+
+            </nav>
+
+            <a href="#" class="btn btn-primary">Descargar App</a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+        </div>
     </header>
 
-    <!-- Sección Informativa -->
-    <section id="informacion" class="info-section">
-        <h2>Sobre la Aplicación</h2>
-        <p>Nuestra app permite a los pacientes gestionar citas médicas de forma sencilla, recomendando especialistas
-            según sus síntomas. Los doctores podrán gestionar sus horarios y citas, ofreciendo una mejor experiencia
-            para todos.</p>
-        <ul>
-            <li><strong>Para pacientes:</strong> Selección de doctor, horarios y laboratorio.</li>
-            <li><strong>Para doctores:</strong> Gestión de citas y revisión de historial de pacientes.</li>
-        </ul>
-    </section>
+    <main>
+        <article>
 
-    <!-- Sección Especialidades -->
-    <section id="especialidades" class="specialties-section">
-        <h2>Especialidades Disponibles</h2>
-        <div class="specialty">
-            <h3>Cardiología</h3>
-            <p>Especialistas en enfermedades del corazón y el sistema circulatorio.</p>
-        </div>
-        <div class="specialty">
-            <h3>Dermatología</h3>
-            <p>Cuidado de la piel, cabello y uñas.</p>
-        </div>
-        <div class="specialty">
-            <h3>Pediatría</h3>
-            <p>Atención médica para niños y adolescentes.</p>
-        </div>
-    </section>
+            <!-- 
+        - #HERO
+      -->
 
-    <!-- Sección de Doctores -->
-    <section id="doctores" class="doctors-section">
-        <h2>Conoce a nuestros Doctores</h2>
-        <div class="doctor-profile">
-            <img src="doctor1.jpg" alt="Doctor 1">
-            <h3>Dr. Juan Pérez</h3>
-            <p>Cardiólogo con más de 10 años de experiencia.</p>
+            <section class="hero" id="home" aria-label="home">
+                <div class="container">
+
+                    <div class="hero-content">
+
+                        <p class="hero-subtitle">¡Bienvenidos a nuestra App de Citas Médicas!</p>
+
+                        <h1 class="headline headline-1 section-title">
+                            Simplifica tus consultas <span class="span">con nuestra app</span>
+                        </h1>
+
+                        <p class="hero-text">
+                            Reserva citas de manera rápida y accede a diversas especialidades médicas desde la comodidad
+                            de tu hogar. Mantén un historial de consultas al alcance de tu mano.
+                        </p>
+
+                        <div class="input-wrapper">
+
+                            <input type="email" name="email_address" placeholder="Introduce tu correo" required
+                                class="input-field" autocomplete="off">
+
+                            <button class="btn btn-primary">
+                                <span class="span">Suscribirse</span>
+
+                                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="hero-banner">
+
+                        <img src="./assets/images/hero-banner.png" width="327" height="490" alt="App de Citas Médicas"
+                            class="w-100">
+
+                        <img src="./assets/images/pattern-2.svg" width="27" height="26" alt="shape"
+                            class="shape shape-1">
+
+                        <img src="./assets/images/pattern-3.svg" width="27" height="26" alt="shape"
+                            class="shape shape-2">
+
+                    </div>
+
+                    <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+                    <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
+                </div>
+            </section>
+
+            <!-- 
+        - #SERVICES
+      -->
+
+            <section class="topics" id="services" aria-labelledby="services-label">
+                <div class="container">
+
+                    <div class="card topic-card">
+
+                        <div class="card-content">
+
+                            <h2 class="headline headline-2 section-title card-title" id="services-label">
+                                Especialidades Médicas
+                            </h2>
+
+                            <p class="card-text">
+                                Accede a una variedad de especialidades con doctores calificados. Conoce a nuestros
+                                profesionales y agenda tu cita de manera rápida y sencilla.
+                            </p>
+
+                            <div class="btn-group">
+                                <button class="btn-icon" aria-label="anterior" data-slider-prev>
+                                    <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                                </button>
+
+                                <button class="btn-icon" aria-label="siguiente" data-slider-next>
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="slider" data-slider>
+                            <ul class="slider-list" data-slider-container>
+
+                                <li class="slider-item">
+                                    <a href="#" class="slider-card">
+                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                                            <img src="./assets/images/gastroenterologia.png" width="507" height="618"
+                                                loading="lazy" alt="Gastroenterología" class="img-cover">
+                                        </figure>
+                                        <div class="slider-content">
+                                            <span class="slider-title">Gastroenterología</span>
+                                            <p class="slider-subtitle">Tratamiento y diagnóstico de problemas
+                                                digestivos.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="slider-item">
+                                    <a href="#" class="slider-card">
+                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                                            <img src="./assets/images/dermatologia.png" width="507" height="618"
+                                                loading="lazy" alt="Dermatología" class="img-cover">
+                                        </figure>
+                                        <div class="slider-content">
+                                            <span class="slider-title">Dermatología</span>
+                                            <p class="slider-subtitle">Cuidado y tratamiento de la piel.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="slider-item">
+                                    <a href="#" class="slider-card">
+                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                                            <img src="./assets/images/neurologia.png" width="507" height="618"
+                                                loading="lazy" alt="Neurología" class="img-cover">
+                                        </figure>
+                                        <div class="slider-content">
+                                            <span class="slider-title">Neurología</span>
+                                            <p class="slider-subtitle">Diagnóstico y tratamiento de enfermedades
+                                                neurológicas.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="slider-item">
+                                    <a href="#" class="slider-card">
+                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                                            <img src="./assets/images/oftalmologia.png" width="507" height="618"
+                                                loading="lazy" alt="Oftalmología" class="img-cover">
+                                        </figure>
+                                        <div class="slider-content">
+                                            <span class="slider-title">Oftalmología</span>
+                                            <p class="slider-subtitle">Tratamiento y diagnóstico de enfermedades
+                                                oculares.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="slider-item">
+                                    <a href="#" class="slider-card">
+                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                                            <img src="./assets/images/pediatria.png" width="507" height="618"
+                                                loading="lazy" alt="Pediatría" class="img-cover">
+                                        </figure>
+                                        <div class="slider-content">
+                                            <span class="slider-title">Pediatría</span>
+                                            <p class="slider-subtitle">Cuidado de la salud infantil.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="slider-item">
+                                    <a href="#" class="slider-card">
+                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                                            <img src="./assets/images/cardiologia.png" width="507" height="618"
+                                                loading="lazy" alt="Cardiología" class="img-cover">
+                                        </figure>
+                                        <div class="slider-content">
+                                            <span class="slider-title">Cardiología</span>
+                                            <p class="slider-subtitle">Diagnóstico y tratamiento de enfermedades del
+                                                corazón.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="slider-item">
+                                    <a href="#" class="slider-card">
+                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                                            <img src="./assets/images/psiquiatria.png" width="507" height="618"
+                                                loading="lazy" alt="Psiquiatría" class="img-cover">
+                                        </figure>
+                                        <div class="slider-content">
+                                            <span class="slider-title">Psiquiatría</span>
+                                            <p class="slider-subtitle">Tratamiento de trastornos mentales y emocionales.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="slider-item">
+                                    <a href="#" class="slider-card">
+                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                                            <img src="./assets/images/medicina-general.png" width="507" height="618"
+                                                loading="lazy" alt="Medicina General" class="img-cover">
+                                        </figure>
+                                        <div class="slider-content">
+                                            <span class="slider-title">Medicina General</span>
+                                            <p class="slider-subtitle">Atención primaria en salud.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="slider-item">
+                                    <a href="#" class="slider-card">
+                                        <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                                            <img src="./assets/images/traumatologia.png" width="507" height="618"
+                                                loading="lazy" alt="Traumatología" class="img-cover">
+                                        </figure>
+                                        <div class="slider-content">
+                                            <span class="slider-title">Traumatología</span>
+                                            <p class="slider-subtitle">Tratamiento de lesiones y problemas del sistema
+                                                musculoesquelético.</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- 
+        - #HOW TO USE
+      -->
+
+            <section class="section feature" aria-label="how-to-use" id="how-to">
+                <div class="container">
+
+                    <h2 class="headline headline-2 section-title">
+                        <span class="span">Guía de Uso</span>
+                    </h2>
+
+                    <p class="section-text">
+                        Sigue estos sencillos pasos para descargar y utilizar nuestra app de citas médicas.
+                    </p>
+
+                    <ul class="feature-list">
+
+                        <li>
+                            <div class="card feature-card">
+
+                                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                                    <img src="./assets/images/descargar-app.png" width="1602" height="903"
+                                        loading="lazy" alt="Descargar la app" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="headline headline-3">
+                                        <a href="#" class="card-title hover-2">
+                                            Paso 1: Descarga la App
+                                        </a>
+                                    </h3>
+
+                                    <p>Descarga la aplicación desde Google Play o App Store. Haz clic en los enlaces
+                                        para ir directamente a las tiendas.</p>
+
+                                    <a href="#" class="card-btn">Google Play</a>
+                                    <a href="#" class="card-btn">App Store</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="card feature-card">
+
+                                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                                    <img src="./assets/images/reservar-cita.png" width="1602" height="903"
+                                        loading="lazy" alt="Reservar una cita" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="headline headline-3">
+                                        <a href="#" class="card-title hover-2">
+                                            Paso 2: Reserva tu Cita
+                                        </a>
+                                    </h3>
+
+                                    <p>Sigue los pasos dentro de la app para elegir tu especialidad, doctor y el horario
+                                        que prefieras.</p>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <!-- 
+        - #CONTACT
+      -->
+
+            <section class="section contact" aria-labelledby="contact-label" id="contact">
+                <div class="container">
+
+                    <h2 class="headline headline-2 section-title" id="contact-label">
+                        <span class="span">Contacto y Ubicación</span>
+                    </h2>
+
+                    <p class="section-text">
+                        Si tienes alguna pregunta o necesitas ayuda, contáctanos a través de los siguientes medios.
+                    </p>
+
+                    <address>
+                        <p>Teléfono: +51 999 888 777</p>
+                        <p>Email: contacto@appcitas.com</p>
+                        <p>Dirección: Av. Central 123, Huancayo, Perú</p>
+                    </address>
+
+                    <div id="map">
+                        <!-- Aquí iría el iframe de Google Maps -->
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 
+        - #FAQ
+      -->
+
+            <section class="section faq" aria-labelledby="faq-label" id="faq">
+                <div class="container">
+
+                    <h2 class="headline headline-2 section-title" id="faq-label">
+                        <span class="span">Preguntas Frecuentes (FAQ)</span>
+                    </h2>
+
+                    <p class="section-text">
+                        Resuelve tus dudas consultando las preguntas más comunes sobre nuestra app.
+                    </p>
+
+                    <ul class="faq-list">
+                        <li>
+                            <h3>¿Cómo reservo una cita?</h3>
+                            <p>Puedes reservar una cita seleccionando la especialidad, doctor y el horario de tu
+                                preferencia directamente desde la app.</p>
+                        </li>
+                        <li>
+                            <h3>¿Cómo cancelo una cita?</h3>
+                            <p>Accede a tu historial de citas y selecciona la opción "Cancelar".</p>
+                        </li>
+                        <li>
+                            <h3>¿Qué especialidades están disponibles?</h3>
+                            <p>Ofrecemos una variedad de especialidades como Gastroenterología, Dermatología,
+                                Neurología, entre otras.</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer>
+        <div class="container">
+
+            <div class="card footer">
+
+                <div class="section footer-top">
+
+                    <div class="footer-brand">
+
+                        <a href="#" class="logo">
+                            <img src="./assets/images/logo.svg" width="119" height="37" loading="lazy"
+                                alt="App de Citas Médicas logo">
+                        </a>
+
+                        <p class="footer-text">
+                            Facilita tus citas médicas con nuestra app, accede a diversas especialidades y lleva un
+                            control de tu historial médico.
+                        </p>
+
+                        <p class="footer-list-title">Dirección</p>
+
+                        <address class="footer-text address">
+                            Av. Central 123, Huancayo, Perú
+                        </address>
+
+                    </div>
+
+                    <div class="footer-list">
+
+                        <p class="footer-list-title">Categorías</p>
+
+                        <ul>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Gastroenterología</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Dermatología</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Neurología</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Traumatología</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-list">
+
+                        <p class="footer-list-title">Newsletter</p>
+
+                        <p class="footer-text">
+                            Regístrate para recibir actualizaciones sobre nuevas especialidades y promociones
+                            exclusivas.
+                        </p>
+
+                        <div class="input-wrapper">
+                            <input type="text" name="name" placeholder="Tu nombre" required class="input-field"
+                                autocomplete="off">
+
+                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input type="email" name="email_address" placeholder="Correo electrónico" required
+                                class="input-field" autocomplete="off">
+
+                            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <a href="#" class="btn btn-primary">
+                            <span class="span">Suscribirse</span>
+
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+
+                    <p class="copyright">
+                        &copy; 2024 App de Citas Médicas.
+                    </p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+
+                                <span class="span">Twitter</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+
+                                <span class="span">LinkedIn</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+
+                                <span class="span">Instagram</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="doctor-profile">
-            <img src="doctor2.jpg" alt="Doctor 2">
-            <h3>Dra. María García</h3>
-            <p>Dermatóloga especializada en enfermedades de la piel.</p>
-        </div>
-        <div class="doctor-profile">
-            <img src="doctor3.jpg" alt="Doctor 3">
-            <h3>Dr. Luis Ramírez</h3>
-            <p>Pediatra con enfoque en atención infantil.</p>
-        </div>
-    </section>
-
-    <!-- Sección de Contacto -->
-    <footer id="contacto" class="contact-section">
-        <h2>Contáctanos</h2>
-        <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-            <button type="submit" class="send-button">Enviar</button>
-        </form>
-        <p>&copy; 2024 App de Citas Médicas</p>
     </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
