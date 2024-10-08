@@ -51,14 +51,14 @@
         <div class="container">
 
             <a href="#" class="logo">
-                <img src="./assets/images/logo.svg" width="119" height="37" alt="App de Citas Médicas logo">
+                <img src="./assets/images/logo.png" width="119" height="37" alt="App de Citas Médicas logo">
             </a>
 
             <nav class="navbar" data-navbar>
 
                 <div class="navbar-top">
                     <a href="#" class="logo">
-                        <img src="./assets/images/logo.svg" width="119" height="37" alt="App de Citas Médicas logo">
+                        <img src="./assets/images/logo.png" width="119" height="37" alt="App de Citas Médicas logo">
                     </a>
 
                     <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -386,64 +386,116 @@
                         Sigue estos sencillos pasos para descargar y utilizar nuestra app de citas médicas.
                     </p>
 
-                    <ul class="feature-list">
+                    <div class="container guia-uso-container">
+                        <div class="guia-uso-card">
+                            <img src="./assets/images/descargar-app.png" alt="Paso 1: Descargar la App">
+                            <h3>Paso 1: Descarga la App</h3>
+                            <p>Descarga la aplicación desde Google Play o App Store. Haz clic en los enlaces para ir
+                                directamente a las tiendas.</p>
+                            <p><a href="#">Google Play</a> | <a href="#">App Store</a></p>
+                        </div>
+
+                        <div class="guia-uso-card">
+                            <img src="./assets/images/reservar-cita.png" alt="Paso 2: Reserva tu Cita">
+                            <h3>Paso 2: Reserva tu Cita</h3>
+                            <p>Sigue los pasos dentro de la app para elegir tu especialidad, doctor y el horario que
+                                prefieras.</p>
+                        </div>
+                    </div>
+
+            </section>
+            <!-- 
+- #FAQ (Desplegable)
+-->
+
+            <section class="section faq" aria-labelledby="faq-label" id="faq">
+                <div class="container">
+
+                    <h2 class="headline headline-2 section-title" id="faq-label">
+                        <span class="span">Preguntas Frecuentes (FAQ)</span>
+                    </h2>
+
+                    <p class="section-text">
+                        Aquí encontrarás respuestas a las preguntas más comunes sobre el uso de nuestra aplicación de
+                        citas médicas. Haz clic en una pregunta para ver la respuesta.
+                    </p>
+
+                    <ul class="faq-list">
 
                         <li>
-                            <div class="card feature-card">
-
-                                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
-                                    <img src="./assets/images/descargar-app.png" width="1602" height="903"
-                                        loading="lazy" alt="Descargar la app" class="img-cover">
-                                </figure>
-
-                                <div class="card-content">
-
-                                    <h3 class="headline headline-3">
-                                        <a href="#" class="card-title hover-2">
-                                            Paso 1: Descarga la App
-                                        </a>
-                                    </h3>
-
-                                    <p>Descarga la aplicación desde Google Play o App Store. Haz clic en los enlaces
-                                        para ir directamente a las tiendas.</p>
-
-                                    <a href="#" class="card-btn">Google Play</a>
-                                    <a href="#" class="card-btn">App Store</a>
-
-                                </div>
-
+                            <button class="faq-question" aria-expanded="false">
+                                ¿Cómo puedo reservar una cita?
+                            </button>
+                            <div class="faq-answer" hidden>
+                                <p>Para reservar una cita, simplemente accede a la sección de "Especialidades" en la
+                                    app, elige la especialidad médica, selecciona el doctor y elige un horario
+                                    disponible que te convenga. Una vez confirmado, recibirás una notificación con los
+                                    detalles de tu cita.</p>
                             </div>
                         </li>
 
                         <li>
-                            <div class="card feature-card">
+                            <button class="faq-question" aria-expanded="false">
+                                ¿Puedo cancelar o reprogramar una cita?
+                            </button>
+                            <div class="faq-answer" hidden>
+                                <p>Sí, puedes cancelar o reprogramar una cita accediendo a la sección "Mis Citas" en la
+                                    app. Desde ahí podrás gestionar tus citas futuras, seleccionar la opción de cancelar
+                                    o reprogramar y seguir los pasos indicados.</p>
+                            </div>
+                        </li>
 
-                                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
-                                    <img src="./assets/images/reservar-cita.png" width="1602" height="903"
-                                        loading="lazy" alt="Reservar una cita" class="img-cover">
-                                </figure>
+                        <li>
+                            <button class="faq-question" aria-expanded="false">
+                                ¿Qué especialidades médicas están disponibles en la app?
+                            </button>
+                            <div class="faq-answer" hidden>
+                                <p>Contamos con una amplia gama de especialidades que incluyen: Gastroenterología,
+                                    Dermatología, Neurología, Oftalmología, Pediatría, Cardiología, Psiquiatría,
+                                    Medicina General, y Traumatología. Cada especialidad está atendida por profesionales
+                                    altamente calificados.</p>
+                            </div>
+                        </li>
 
-                                <div class="card-content">
+                        <li>
+                            <button class="faq-question" aria-expanded="false">
+                                ¿Cómo recibo los resultados de mis consultas?
+                            </button>
+                            <div class="faq-answer" hidden>
+                                <p>Una vez finalizada la consulta, podrás acceder a los resultados y recomendaciones
+                                    médicas directamente desde la app, en la sección "Historial Médico". Además, podrás
+                                    descargar tus reportes o compartirlos con otros especialistas si es necesario.</p>
+                            </div>
+                        </li>
 
-                                    <h3 class="headline headline-3">
-                                        <a href="#" class="card-title hover-2">
-                                            Paso 2: Reserva tu Cita
-                                        </a>
-                                    </h3>
+                        <li>
+                            <button class="faq-question" aria-expanded="false">
+                                ¿Es seguro mi historial médico en la app?
+                            </button>
+                            <div class="faq-answer" hidden>
+                                <p>Nos tomamos muy en serio la privacidad de nuestros usuarios. Toda la información
+                                    médica está encriptada y almacenada de forma segura. Solo tú y tu médico pueden
+                                    acceder a tu historial clínico, garantizando la máxima confidencialidad.</p>
+                            </div>
+                        </li>
 
-                                    <p>Sigue los pasos dentro de la app para elegir tu especialidad, doctor y el horario
-                                        que prefieras.</p>
-
-                                </div>
-
+                        <li>
+                            <button class="faq-question" aria-expanded="false">
+                                ¿Cómo puedo recibir soporte técnico si tengo algún problema?
+                            </button>
+                            <div class="faq-answer" hidden>
+                                <p>Si experimentas algún inconveniente técnico o tienes preguntas sobre el uso de la
+                                    app, puedes contactarnos a través de nuestro correo electrónico (<a
+                                        href="mailto:soporte@appcitas.com">soporte@appcitas.com</a>) o llamarnos
+                                    directamente al número de atención al cliente +51 999 888 777.</p>
                             </div>
                         </li>
 
                     </ul>
 
                 </div>
-
             </section>
+
 
             <!-- 
         - #CONTACT
@@ -474,192 +526,155 @@
             </section>
 
             <!-- 
-        - #FAQ
-      -->
+- #FOOTER
+-->
 
-            <section class="section faq" aria-labelledby="faq-label" id="faq">
+            <footer>
                 <div class="container">
 
-                    <h2 class="headline headline-2 section-title" id="faq-label">
-                        <span class="span">Preguntas Frecuentes (FAQ)</span>
-                    </h2>
+                    <div class="card footer">
 
-                    <p class="section-text">
-                        Resuelve tus dudas consultando las preguntas más comunes sobre nuestra app.
-                    </p>
+                        <div class="section footer-top">
 
-                    <ul class="faq-list">
-                        <li>
-                            <h3>¿Cómo reservo una cita?</h3>
-                            <p>Puedes reservar una cita seleccionando la especialidad, doctor y el horario de tu
-                                preferencia directamente desde la app.</p>
-                        </li>
-                        <li>
-                            <h3>¿Cómo cancelo una cita?</h3>
-                            <p>Accede a tu historial de citas y selecciona la opción "Cancelar".</p>
-                        </li>
-                        <li>
-                            <h3>¿Qué especialidades están disponibles?</h3>
-                            <p>Ofrecemos una variedad de especialidades como Gastroenterología, Dermatología,
-                                Neurología, entre otras.</p>
-                        </li>
-                    </ul>
+                            <div class="footer-brand">
 
-                </div>
-            </section>
+                                <a href="#" class="logo">
+                                    <img src="./assets/images/logo.png" width="119" height="37" loading="lazy"
+                                        alt="App de Citas Médicas logo">
+                                </a>
 
-        </article>
-    </main>
+                                <p class="footer-text">
+                                    Facilita tus citas médicas con nuestra app, accede a diversas especialidades y lleva
+                                    un
+                                    control de tu historial médico.
+                                </p>
 
-    <!-- 
-    - #FOOTER
-  -->
+                                <p class="footer-list-title">Dirección</p>
 
-    <footer>
-        <div class="container">
+                                <address class="footer-text address">
+                                    Av. Central 123, Huancayo, Perú
+                                </address>
 
-            <div class="card footer">
+                            </div>
 
-                <div class="section footer-top">
+                            <div class="footer-list">
 
-                    <div class="footer-brand">
+                                <p class="footer-list-title">Categorías</p>
 
-                        <a href="#" class="logo">
-                            <img src="./assets/images/logo.svg" width="119" height="37" loading="lazy"
-                                alt="App de Citas Médicas logo">
-                        </a>
+                                <ul>
 
-                        <p class="footer-text">
-                            Facilita tus citas médicas con nuestra app, accede a diversas especialidades y lleva un
-                            control de tu historial médico.
-                        </p>
+                                    <li>
+                                        <a href="#" class="footer-link hover-2">Gastroenterología</a>
+                                    </li>
 
-                        <p class="footer-list-title">Dirección</p>
+                                    <li>
+                                        <a href="#" class="footer-link hover-2">Dermatología</a>
+                                    </li>
 
-                        <address class="footer-text address">
-                            Av. Central 123, Huancayo, Perú
-                        </address>
+                                    <li>
+                                        <a href="#" class="footer-link hover-2">Neurología</a>
+                                    </li>
 
-                    </div>
+                                    <li>
+                                        <a href="#" class="footer-link hover-2">Traumatología</a>
+                                    </li>
 
-                    <div class="footer-list">
+                                </ul>
 
-                        <p class="footer-list-title">Categorías</p>
+                            </div>
 
-                        <ul>
+                            <div class="footer-list">
 
-                            <li>
-                                <a href="#" class="footer-link hover-2">Gastroenterología</a>
-                            </li>
+                                <p class="footer-list-title">Subscribete</p>
 
-                            <li>
-                                <a href="#" class="footer-link hover-2">Dermatología</a>
-                            </li>
+                                <p class="footer-text">
+                                    Regístrate para recibir actualizaciones sobre nuevas especialidades y promociones
+                                    exclusivas.
+                                </p>
 
-                            <li>
-                                <a href="#" class="footer-link hover-2">Neurología</a>
-                            </li>
+                                <div class="input-wrapper">
+                                    <input type="text" name="name" placeholder="Tu nombre" required class="input-field"
+                                        autocomplete="off">
 
-                            <li>
-                                <a href="#" class="footer-link hover-2">Traumatología</a>
-                            </li>
+                                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                                </div>
 
-                        </ul>
+                                <div class="input-wrapper">
+                                    <input type="email" name="email_address" placeholder="Correo electrónico" required
+                                        class="input-field" autocomplete="off">
 
-                    </div>
+                                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                                </div>
 
-                    <div class="footer-list">
+                                <a href="#" class="btn btn-primary">
+                                    <span class="span">Suscribirse</span>
 
-                        <p class="footer-list-title">Newsletter</p>
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
 
-                        <p class="footer-text">
-                            Regístrate para recibir actualizaciones sobre nuevas especialidades y promociones
-                            exclusivas.
-                        </p>
+                            </div>
 
-                        <div class="input-wrapper">
-                            <input type="text" name="name" placeholder="Tu nombre" required class="input-field"
-                                autocomplete="off">
-
-                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
                         </div>
 
-                        <div class="input-wrapper">
-                            <input type="email" name="email_address" placeholder="Correo electrónico" required
-                                class="input-field" autocomplete="off">
+                        <div class="footer-bottom">
 
-                            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                            <p class="copyright">
+                                &copy; 2024 App de Citas Médicas.
+                            </p>
+
+                            <ul class="social-list">
+
+                                <li>
+                                    <a href="#" class="social-link">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+
+                                        <span class="span">Twitter</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="social-link">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+
+                                        <span class="span">LinkedIn</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="social-link">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+
+                                        <span class="span">Instagram</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+
                         </div>
-
-                        <a href="#" class="btn btn-primary">
-                            <span class="span">Suscribirse</span>
-
-                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                        </a>
 
                     </div>
 
                 </div>
+            </footer>
 
-                <div class="footer-bottom">
-
-                    <p class="copyright">
-                        &copy; 2024 App de Citas Médicas.
-                    </p>
-
-                    <ul class="social-list">
-
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-twitter"></ion-icon>
-
-                                <span class="span">Twitter</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-linkedin"></ion-icon>
-
-                                <span class="span">LinkedIn</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-instagram"></ion-icon>
-
-                                <span class="span">Instagram</span>
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
-    </footer>
-
-    <!-- 
+            <!-- 
     - #BACK TO TOP
   -->
 
-    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-        <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
-    </a>
+            <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+                <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+            </a>
 
-    <!-- 
+            <!-- 
     - custom js link
   -->
-    <script src="./assets/js/script.js"></script>
+            <script src="./assets/js/script.js"></script>
 
-    <!-- 
+            <!-- 
     - ionicon link
   -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

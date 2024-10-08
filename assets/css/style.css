@@ -1,5 +1,4 @@
 :root {
-
   /**
    * COLORS
    */
@@ -114,10 +113,6 @@
 
 }
 
-
-
-
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -207,10 +202,6 @@ body.nav-active {
   background-color: var(--bg-carolina-blue);
   border-radius: var(--radius-pill);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -353,10 +344,6 @@ body.nav-active {
   align-items: center;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -481,10 +468,6 @@ body.nav-active {
   font-size: var(--fontSize-8);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -571,10 +554,6 @@ body.nav-active {
   left: 24px;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #TOPICS
 \*-----------------------------------*/
@@ -631,6 +610,28 @@ body.nav-active {
   min-width: 100%;
 }
 
+@media (max-width: 768px) {
+  .slider-item {
+    flex: 1 1 calc(50% - 20px);
+    /* Para pantallas medianas, 2 ítems */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-item {
+    flex: 1 1 100%;
+    /* Para pantallas pequeñas, 1 ítem */
+    max-width: 100%;
+  }
+}
+
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .slider-card {
   position: relative;
 }
@@ -648,6 +649,12 @@ body.nav-active {
 
 .slider-list .slider-banner {
   border-radius: var(--radius-8);
+}
+
+.slider-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .slider-content {
@@ -670,10 +677,6 @@ body.nav-active {
 .slider-subtitle {
   font-size: var(--fontSize-7);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #FEATURED
@@ -748,10 +751,6 @@ body.nav-active {
   margin-block-start: 30px;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #POPULAR TAGS
 \*-----------------------------------*/
@@ -782,10 +781,6 @@ body.nav-active {
   width: 100%;
   max-width: 32px;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #RECENT POST
@@ -955,10 +950,6 @@ body.nav-active {
   border-radius: var(--radius-8);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
@@ -1061,10 +1052,6 @@ body.nav-active {
   transform: translateY(-2px);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
@@ -1096,10 +1083,6 @@ body.nav-active {
   opacity: 1;
   transform: translateY(-10px);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #MEDIA QUERIES
@@ -1133,8 +1116,6 @@ body.nav-active {
 
   }
 
-
-
   /**
    * REUSED STYLE
    */
@@ -1149,8 +1130,6 @@ body.nav-active {
     --fontSize-2: 2.4rem;
   }
 
-
-
   /**
    * HEADER
    */
@@ -1163,8 +1142,6 @@ body.nav-active {
   .header.active {
     padding-block: 20px;
   }
-
-
 
   /**
    * HERO
@@ -1198,8 +1175,6 @@ body.nav-active {
     left: 60px;
   }
 
-
-
   /**
    * TOPICS
    */
@@ -1215,8 +1190,6 @@ body.nav-active {
   .slider-item {
     min-width: calc(33.33% - 13.33px);
   }
-
-
 
   /**
    * FEATURE
@@ -1234,8 +1207,6 @@ body.nav-active {
     pointer-events: none;
   }
 
-
-
   /**
    * RECENT POST
    */
@@ -1250,8 +1221,6 @@ body.nav-active {
     height: 42px;
   }
 
-
-
   /**
    * ASIDE
    */
@@ -1261,10 +1230,6 @@ body.nav-active {
   }
 
 }
-
-
-
-
 
 /**
  * responsive for large than 768px screen
@@ -1288,8 +1253,6 @@ body.nav-active {
 
   }
 
-
-
   /**
    * REUSED STYLE
    */
@@ -1297,8 +1260,6 @@ body.nav-active {
   .container {
     max-width: 720px;
   }
-
-
 
   /**
    * RECENT POST
@@ -1309,10 +1270,6 @@ body.nav-active {
   }
 
 }
-
-
-
-
 
 /**
  * responsive for large than 992px screen
@@ -1328,8 +1285,6 @@ body.nav-active {
     max-width: 930px;
   }
 
-
-
   /**
    * HERO
    */
@@ -1343,8 +1298,6 @@ body.nav-active {
     align-items: center;
   }
 
-
-
   /** 
    * TOPICS
    */
@@ -1355,8 +1308,6 @@ body.nav-active {
     align-items: center;
     gap: 20px;
   }
-
-
 
   /**
    * FEATURE
@@ -1374,8 +1325,6 @@ body.nav-active {
     --fontSize-2: 2rem;
   }
 
-
-
   /**
    * TAGS
    */
@@ -1383,8 +1332,6 @@ body.nav-active {
   .tags .grid-list {
     grid-template-columns: repeat(4, 1fr);
   }
-
-
 
   /**
    * RECENT POST
@@ -1394,8 +1341,6 @@ body.nav-active {
     grid-template-columns: 1fr 0.6fr;
     align-items: flex-start;
   }
-
-
 
   /**
    * FOOTER
@@ -1416,10 +1361,6 @@ body.nav-active {
 
 }
 
-
-
-
-
 /**
  * responsive for large than 1200px screen
  */
@@ -1437,8 +1378,6 @@ body.nav-active {
   body.nav-active {
     overflow-y: overlay;
   }
-
-
 
   /**
    * HEADER
@@ -1478,8 +1417,6 @@ body.nav-active {
     transform: translateX(0);
   }
 
-
-
   /**
    * HERO
    */
@@ -1487,8 +1424,6 @@ body.nav-active {
   .hero .container {
     max-width: 1050px;
   }
-
-
 
   /**
    * TAGS
@@ -1498,8 +1433,6 @@ body.nav-active {
     grid-template-columns: repeat(6, 1fr);
   }
 
-
-
   /**
    * FOOTER
    */
@@ -1507,6 +1440,138 @@ body.nav-active {
   .footer-top {
     gap: 40px;
     padding-inline: 120px;
+  }
+
+  /* FAQ Section Styles */
+  .faq-question {
+    background-color: var(--bg-prussian-blue);
+    /* Fondo más oscuro para preguntas */
+    color: var(--text-alice-blue);
+    /* Texto blanco claro */
+    font-size: var(--fontSize-4);
+    /* Tamaño de fuente mediano */
+    font-weight: var(--weight-bold);
+    /* Negrita para resaltar */
+    padding: 15px 20px;
+    /* Padding adecuado para que el texto respire */
+    border: 1px solid var(--border-prussian-blue);
+    /* Borde sutil */
+    border-radius: var(--radius-8);
+    /* Bordes redondeados */
+    width: 100%;
+    /* Ocupa todo el ancho */
+    text-align: left;
+    cursor: pointer;
+    /* Muestra que es clicable */
+    transition: background-color var(--transition-1), transform var(--transition-1);
+    /* Transiciones suaves */
+    display: flex;
+    /* Display flex para alinear bien el contenido */
+    justify-content: space-between;
+    /* Separar el texto del ícono */
+    align-items: center;
+    margin-bottom: 10px;
+    /* Espacio entre las preguntas */
+  }
+
+  .faq-question:hover {
+    background-color: var(--bg-oxford-blue);
+    /* Color diferente al hacer hover */
+    transform: translateY(-3px);
+    /* Efecto de desplazamiento hacia arriba */
+  }
+
+  .faq-question[aria-expanded="true"] {
+    background-color: var(--bg-oxford-blue);
+    /* Cambio de color al estar expandido */
+  }
+
+  .faq-answer {
+    padding: 15px 20px;
+    /* Buen espacio interno */
+    background-color: var(--bg-wild-blue-yonder);
+    /* Fondo suave para respuestas */
+    border-left: 4px solid var(--text-carolina-blue);
+    /* Línea de color en el lado izquierdo */
+    border-radius: var(--radius-8);
+    /* Bordes redondeados */
+    color: var(--text-shadow-blue);
+    /* Color de texto para buena legibilidad */
+    font-size: var(--fontSize-6);
+    /* Tamaño de fuente más pequeño */
+    margin-top: 5px;
+    display: none;
+    /* Inicialmente escondido */
+  }
+
+  .faq-answer p {
+    margin: 0;
+  }
+
+  .faq-answer[hidden] {
+    display: none;
+  }
+
+  /* Icono para el dropdown de preguntas */
+  .faq-question::after {
+    content: "\25B6";
+    /* Flecha hacia la derecha */
+    font-size: 1.4rem;
+    transition: transform var(--transition-1);
+  }
+
+  .faq-question[aria-expanded="true"]::after {
+    content: "\25BC";
+    /* Flecha hacia abajo */
+    transform: rotate(0deg);
+  }
+
+  /* Estilos para la sección de Guía de Uso */
+  .guia-uso-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Espacio entre las tarjetas */
+    justify-content: space-between;
+    /* Distribuye las tarjetas uniformemente */
+  }
+
+  .guia-uso-card {
+    background-color: var(--bg-prussian-blue);
+    border-radius: var(--radius-8);
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px);
+    /* Dos tarjetas por fila, ajustable */
+    box-shadow: var(--shadow-2);
+    text-align: center;
+  }
+
+  .guia-uso-card img {
+    width: 100%;
+    /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de las imágenes */
+    border-radius: var(--radius-8);
+    margin-bottom: 15px;
+  }
+
+  .guia-uso-card h3 {
+    color: var(--text-alice-blue);
+    font-size: var(--fontSize-4);
+    margin-bottom: 10px;
+  }
+
+  .guia-uso-card p {
+    color: var(--text-shadow-blue);
+    font-size: var(--fontSize-6);
+  }
+
+  /* Diseño responsive */
+  @media (max-width: 768px) {
+    .guia-uso-card {
+      flex: 1 1 100%;
+      /* En pantallas pequeñas, las tarjetas ocupan el 100% del ancho */
+    }
   }
 
 }

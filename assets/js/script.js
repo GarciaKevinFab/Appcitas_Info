@@ -108,3 +108,22 @@ window.addEventListener("resize", function () {
 
   moveSliderItem();
 });
+
+/**Script para hacer el FAQ desplegable*/
+document.addEventListener('DOMContentLoaded', function () {
+  const faqQuestions = document.querySelectorAll('.faq-question');
+
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const expanded = question.getAttribute('aria-expanded') === 'true';
+      question.setAttribute('aria-expanded', !expanded);
+
+      const answer = question.nextElementSibling;
+      if (expanded) {
+        answer.style.display = 'none'; // Oculta la respuesta
+      } else {
+        answer.style.display = 'block'; // Muestra la respuesta
+      }
+    });
+  });
+});
